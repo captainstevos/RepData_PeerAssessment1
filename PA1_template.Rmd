@@ -1,3 +1,6 @@
+---
+output: html_document
+---
 #Reproducible Research Peer Assignment 1
 
 With the ability to collect a large amount of data about personal movement using devices such as the Fitbit, Fuelband, or Jawbone up, this assignment explores possible analysis the data. 

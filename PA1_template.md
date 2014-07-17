@@ -1,5 +1,5 @@
 ---
-output: word_document
+output: html_document
 ---
 #Reproducible Research Peer Assignment 1
 
