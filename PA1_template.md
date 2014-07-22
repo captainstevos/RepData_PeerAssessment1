@@ -26,7 +26,7 @@ daily.activity <- tapply(activity$steps, list(activity$date),sum, na.rm=TRUE)
 hist(daily.activity, xlab = "Total Steps per Day",ylab = "Frequency", main = "Steps per Day", col="red")
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2](figures/unnamed-chunk-2.png) 
 
 
 The mean and median are report below:
@@ -55,7 +55,7 @@ interval.activity <- sapply(with(activity, split(steps, interval)), mean, na.rm=
 plot(as.table(interval.activity), type="l",xlab="Interval", ylab="Average Steps", main="Average Steps by Interval", col="blue")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-4](figures/unnamed-chunk-4.png) 
 
 
 The 835th Interval has the most steps:
@@ -91,7 +91,7 @@ new.daily.activity <- tapply(new.activity$steps, list(new.activity$date),sum)
 hist(new.daily.activity, xlab = "Total Steps per Day",ylab = "Frequency", main = "Steps per Day", col="green")
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7.png) 
+![plot of chunk unnamed-chunk-7](figures/unnamed-chunk-7.png) 
 
 
 The new mean and median are: 
@@ -128,4 +128,4 @@ plot(weekend$steps, type = "l", main = "Average weekend Steps", xlab="Interval",
 plot(weekday$steps, type = "l", main = "Average weekday Steps", xlab="Interval", ylab= "Average Steps",ylim = c(0, 250))
 ```
 
-![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9.png) 
+![plot of chunk unnamed-chunk-9](figures/unnamed-chunk-9.png) 
